@@ -1,0 +1,3 @@
+<div class="form-field">
+	<p><?php _e( '<p>See <a href="http://otwthemes.com/online-documentation-tabs-shortcode-and-widget-plugin/?utm_source=wp.org&amp;utm_medium=admin&amp;utm_content=docs&amp;utm_campaign=cml">Online documentation</a> for more info on this plugin.</p><p>Check out the full version of the <a href="http://codecanyon.net/item/content-manager-for-wordpress/7431829?ref=OTWthemes">Content Manager for WordPress</a>.</p>', 'otw_tsw' );?></p>
+</div>

@@ -1,0 +1,112 @@
+// Box Mixins
+//
+// @since 2.0
+//
+// @param @c - desired background color
+.shortcode-box( @c: #aaa ) {
+    background-color: @c;
+}
+
+.shortcode-box( @c: #aaa ) when ( lightness( @c ) >= 66% ) {
+    border: 1px solid darken( @c, 10% );
+    color: darken( @c, 55% );
+
+    a {
+        color: darken( @c, 55% ) !important;
+    }
+}
+
+.shortcode-box( @c: #aaa ) when ( lightness( @c ) < 66% ) {
+    color: #fff;
+
+    a {
+        color: #fff !important;
+        //color: darken( @c, 45% );
+    }
+
+}
+
+/* Box Styling
+------------------------------------------------------------ */
+.arconix-box {
+    position: relative;
+    clear: both;
+    margin: 1em 0;
+    padding: 1em;
+
+    > i.fa {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    a, a:hover {
+        text-decoration: underline;
+    }
+
+    .arconix-box-content {
+        /* If there is an icon in use, it will wrap the box content in a div with the following class */
+        margin-left: 45px;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.arconix-box-black {
+    .shortcode-box( @black );
+}
+
+.arconix-box-blue {
+    .shortcode-box( @blue );
+}
+
+.arconix-box-lblue {
+    .shortcode-box( @lblue );
+}
+
+.arconix-box-green {
+    .shortcode-box( @green );
+}
+
+.arconix-box-lgreen {
+    .shortcode-box( @lgreen );
+}
+.arconix-box-gray,
+.arconix-box-grey {
+    .shortcode-box( @gray );
+}
+
+.arconix-box-lgray,
+.arconix-box-lgrey {
+    .shortcode-box( @lgray );
+}
+
+.arconix-box-orange {
+    .shortcode-box( @orange );
+}
+
+.arconix-box-purple {
+    .shortcode-box( @purple );
+}
+
+.arconix-box-red {
+    .shortcode-box( @red );
+}
+
+.arconix-box-lred {
+    .shortcode-box( @lred );
+}
+
+.arconix-box-tan {
+    .shortcode-box( @tan );
+}
+
+.arconix-box-ltan {
+    .shortcode-box( @ltan );
+}
+
+.arconix-box-yellow {
+    .shortcode-box( @yellow );
+}
